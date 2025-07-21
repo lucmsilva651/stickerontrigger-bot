@@ -1,0 +1,9 @@
+services:
+  pss-custom-bot:
+    build: .
+    container_name: pssk-custom-bot
+    restart: unless-stopped
+    volumes:
+      - ./.env:/usr/src/app/.env:ro
+    environment:
+      - NODE_ENV=production 

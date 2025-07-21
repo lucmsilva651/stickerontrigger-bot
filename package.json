@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "nodemon"
+  },
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.44.1",
+    "nodemon": "^3.1.10",
+    "telegraf": "^4.16.3"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "1": {
+    "trigger": "test",
+    "sticker": {
+      "1": "CAACAgQAAxkBAAEO_D5ofqVL_UrAF7dkugflMvCMiQOxWgACPwADyPrsE5V7Ljtg5nK0NgQ"
+    }
+  },
+  "2": {
+    "trigger": "trigger",
+    "sticker": {
+      "1": "CAACAgQAAxkBAAEO_DxofqT4NmqtNcvzIWLHVnBzEVEBIQACQgADyPrsEwABAVVloeLnCDYE"
+    }
+  }
+}
