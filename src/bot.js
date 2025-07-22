@@ -43,7 +43,16 @@ bot.start(async (ctx) => {
 
 bot.command("triggers", async (ctx) => {
   const Strings = getStrings(ctx.from.language_code);
-  const triggerList = Object.values(stickerData).map(entry => `\`${entry.trigger}\``).join(" • ");
+  const triggerList = Object.values(stickerData)
+    .sort((a, b) => Object.keys(b.sticker).length - Object.keys(a.sticker).length)
+    .map(entry => {
+      const count = Object.keys(entry.sticker).length;
+      return count > 1
+        ? `\`${entry.trigger}\` (${count})`
+        : `\`${entry.trigger}\``;
+    })
+    .join(" • ");
+
   const message = Strings.availableTriggers.replace("{list}", triggerList);
 
   await ctx.reply(message, {
