@@ -1,4 +1,4 @@
 {
   "welcomeBot": "*Olá! Eu sou {name}, um bot feito para responder com um sticker sempre que um nome/palavra específica (também chamado de trigger) for enviado no chat.*\n\nVeja /triggers para a lista de triggers!\n\npor {owner}\nCódigo-fonte: {source}",
-  "availableTriggers": "*Lista de triggers disponíveis:*\n{list}"
+  "availableTriggers": "*Lista de triggers disponíveis:*\n\n{list}"
 }
