@@ -4,6 +4,7 @@ services:
     container_name: pssk-custom-bot
     restart: unless-stopped
     volumes:
+      - ./src/database/stickers.json:/usr/src/app/src/database/stickers.json:ro
       - ./.env:/usr/src/app/.env:ro
     environment:
       - NODE_ENV=production 
